@@ -13,7 +13,7 @@
         android:layout_above="@+id/name"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="@dimen/marginBottom"
         android:adjustViewBounds="false"
         android:contentDescription="@string/udacity"
         android:cropToPadding="false"
@@ -27,9 +27,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/marginTop"
         android:fontFamily="cursive"
-        android:paddingLeft="8dp"
+        android:paddingStart="@dimen/paddingStart"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingRight="@dimen/paddingRight"
+        android:paddingEnd="@dimen/paddingEnd"
         android:text="@string/creating_the_future_with_innovative_thinkers"
         android:textColor="@android:color/black"
         android:textSize="36sp" />
@@ -41,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="83dp"
+        android:layout_marginBottom="@dimen/marginBottom2"
         android:contentDescription="@string/udacity"
         android:fontFamily="cursive"
         android:lineSpacingExtra="8sp"
@@ -58,15 +61,17 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/phone_number"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:paddingLeft="64dp"
-        android:paddingRight="64dp"
+        android:layout_marginBottom="@dimen/marginBottom3"
+        android:paddingStart="@dimen/paddingStart"
+        android:paddingLeft="@dimen/paddingLeft1"
+        android:paddingRight="@dimen/paddingRight1"
+        android:paddingEnd="@dimen/paddingEnd"
         android:autoLink="map"
         android:fontFamily="cursive"
         android:lineSpacingExtra="8sp"
         android:text="@string/_2465_latham_st_mountain_view_ca_94043"
         android:textAlignment="center"
-        android:textColor="#212121"
+        android:textColor="@color/textColor"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -81,7 +86,7 @@
         android:lineSpacingExtra="10sp"
         android:text="@string/_650_555_5555"
         android:autoLink="phone"
-        android:textColor="#212121"
+        android:textColor="@color/textColor"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
@@ -94,9 +99,10 @@
         android:autoLink="web"
         android:lineSpacingExtra="10sp"
         android:text="@string/www_udacity_com"
-        android:textColor="#212121"
+        android:textColor="@color/textColor"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:paddingBottom="@dimen/paddingBottom"/>
 
 
 </RelativeLayout>

@@ -21,42 +21,51 @@
         android:src="@drawable/future" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/marginTop"
-        android:fontFamily="cursive"
+        app:fontFamily="cursive"
         android:paddingStart="@dimen/paddingStart"
         android:paddingLeft="@dimen/paddingLeft"
         android:paddingRight="@dimen/paddingRight"
         android:paddingEnd="@dimen/paddingEnd"
         android:text="@string/creating_the_future_with_innovative_thinkers"
         android:textColor="@android:color/black"
-        android:textSize="36sp" />
+        android:textSize="@dimen/text_size" />
 
     <TextView
 
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
+        android:layout_above="@+id/address"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/marginBottom2"
         android:contentDescription="@string/udacity"
-        android:fontFamily="cursive"
-        android:lineSpacingExtra="8sp"
+        app:fontFamily="cursive"
+        android:lineSpacingExtra="@dimen/line_spacing"
         android:text="@string/udacity"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
+        android:textSize="@dimen/text_size"
         android:textStyle="bold"
         tools:text="Udacity" />
 
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/address"
+        android:contentDescription="@string/_2465_latham_st_mountain_view_ca_94043"
+        android:src="@drawable/ic_location_on_black_24dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/phone_number"
@@ -67,40 +76,62 @@
         android:paddingRight="@dimen/paddingRight1"
         android:paddingEnd="@dimen/paddingEnd"
         android:autoLink="map"
-        android:fontFamily="cursive"
+        app:fontFamily="cursive"
         android:lineSpacingExtra="8sp"
         android:text="@string/_2465_latham_st_mountain_view_ca_94043"
         android:textAlignment="center"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
+        android:textSize="@dimen/text_size_address"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/phone_number"
+        android:layout_marginStart="@dimen/layout_magin"
+        android:layout_marginLeft="@dimen/layout_magin"
+        android:contentDescription="@string/_650_555_5555"
+        android:src="@drawable/ic_local_phone_black_24dp" />
 
     <TextView
         android:id="@+id/phone_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView5"
+        android:layout_above="@+id/web_address"
         android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif"
-        android:lineSpacingExtra="10sp"
+        app:fontFamily="sans-serif"
+        android:lineSpacingExtra="@dimen/line_spacing_2"
         android:text="@string/_650_555_5555"
         android:autoLink="phone"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_2"
         android:textStyle="bold"/>
 
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginEnd="@dimen/layout_margin_end"
+        android:layout_marginRight="@dimen/layout_magin"
+        android:layout_toStartOf="@+id/phone"
+        android:layout_toLeftOf="@id/phone"
+        android:contentDescription="@string/www_udacity_com"
+        android:src="@drawable/ic_public_black_24dp" />
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/web_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:autoLink="web"
-        android:lineSpacingExtra="10sp"
+        android:lineSpacingExtra="@dimen/line_spacing_2"
         android:text="@string/www_udacity_com"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_2"
         android:textStyle="bold"
         android:paddingBottom="@dimen/paddingBottom"/>
 
